@@ -1,16 +1,20 @@
 <style lang="less">
 </style>
 <template>
-  <nd-layout></nd-layout>
+  <nd-layout>
+     <div slot="body">
+       <nd-input />
+     </div>
+  </nd-layout>
 </template>
 <script>
 import ndLayout from "~/components/nd-layout";
-import ndButton from "~/components/nd-button";
+import ndInput from "~/components/nd-input";
 export default { 
 
   components: {
     ndLayout,
-    ndButton
+    ndInput
   }
 }
 </script>

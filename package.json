@@ -13,7 +13,10 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0"
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "nuxt": "^1.0.0",
+    "vue-style-loader": "^3.0.3"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
