@@ -35,7 +35,7 @@ li {
 
     &>.nd-calendar-scroll{
         position: absolute;
-        transform: scaleY(1);
+        transform: scaleY(0);
         transform-origin: center top 0;
         left:0;
         overflow: hidden;

@@ -3,18 +3,24 @@
 <template>
   <nd-layout>
      <div slot="body">
-       <nd-input />
+       <nd-calendar v-model="date" />
      </div>
   </nd-layout>
 </template>
 <script>
 import ndLayout from "~/components/nd-layout";
-import ndInput from "~/components/nd-calendar";
+import ndCalendar from "~/components/nd-calendar";
 export default { 
+
+  data() {
+    return {
+      date : ''
+    }
+  },
 
   components: {
     ndLayout,
-    ndInput
+    ndCalendar
   }
 }
 </script>
