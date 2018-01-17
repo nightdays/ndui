@@ -25,6 +25,8 @@ module.exports = {
   /*
   ** Build configuration
   */
+  router: { base: '/ndui/'},
+
   build: {
     /*
     ** Run ESLint on save

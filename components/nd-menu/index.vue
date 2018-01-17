@@ -61,6 +61,7 @@ export default {
 	methods: {
 		goto(item){
 			this.$router.push(item.router);
+			console.log(item.router);
 		},
 		isActive(router){
 			if(router == this.$route.name){
