@@ -39,6 +39,6 @@ module.exports = {
     //     })
     //   }
     // }
-  },
-  layout: '~components/layout'
+    publicPath : '/ndui/'
+  }
 }
