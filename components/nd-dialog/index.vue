@@ -90,6 +90,8 @@
 </template>
 
 <script>
+import ndButton from  '../nd-button';
+import ndGroup from  '../nd-group';
 export default {
     props: ['title','noFooter','visible'],
     methods: {
@@ -99,6 +101,10 @@ export default {
         close() {
             this.$emit("update:visible",false);
         }
+    },
+    components: {
+        ndButton,
+        ndGroup
     }
 }
 </script>

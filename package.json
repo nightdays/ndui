@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "Nuxt.js project",
   "author": "nightdays <nuoyazhishen@163.com>",
+  "main" : "src/index.js",
   "scripts": {
   }
 }
