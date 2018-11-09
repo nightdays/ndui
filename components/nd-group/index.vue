@@ -1,5 +1,5 @@
 <style lang="less" scoped>
-.hr-group{
+.nd-group{
     position: absolute;
     top:50%;
     right:0;
@@ -8,7 +8,7 @@
 </style>
 
 <template>
-<div class="hr-group">
+<div class="nd-group">
     <slot></slot>
 </div>
 </template>
