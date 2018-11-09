@@ -1,5 +1,5 @@
 <style lang="less" scoped>
-.hr-dialog {
+.nd-dialog {
     position: fixed;
     top:0;
     right: 0;
@@ -36,7 +36,7 @@
 }
 
 
-.hr-dialog .hr-dialog-inner .hr-dialog-inner-header {
+.nd-dialog .nd-dialog-inner .nd-dialog-inner-header {
     .name {
         color: #333;
         font-weight: normal;
@@ -59,7 +59,7 @@
     }
 }
 
-.hr-dialog .hr-dialog-inner .hr-dialog-inner-footer {
+.nd-dialog .nd-dialog-inner .nd-dialog-inner-footer {
     position: relative;
     box-sizing: content-box;
     height: 38px;
@@ -72,18 +72,18 @@
 </style>
 
 <template>
-<div class="hr-dialog" :class="{visible: visible}">
-    <div class="hr-dialog-inner">
-        <div class="hr-dialog-inner-header">
+<div class="nd-dialog" :class="{visible: visible}">
+    <div class="nd-dialog-inner">
+        <div class="nd-dialog-inner-header">
             <span class="name">{{title}}</span>
-            <span class="value" @click="close"><i class="hr-icon-close"></i></span>
+            <span class="value" @click="close"><i class="nd-icon-close"></i></span>
         </div>
         <slot></slot>
-        <div v-if="!noFooter" class="hr-dialog-inner-footer">
-            <hr-group>
-                <hr-button type="default" @click="close">取 消</hr-button>
-                <hr-button class="ml-10" @click="confirm">确 定</hr-button>
-            </hr-group>
+        <div v-if="!noFooter" class="nd-dialog-inner-footer">
+            <nd-group>
+                <nd-button type="default" @click="close">取 消</nd-button>
+                <nd-button class="ml-10" @click="confirm">确 定</nd-button>
+            </nd-group>
         </div>
     </div>
 </div>

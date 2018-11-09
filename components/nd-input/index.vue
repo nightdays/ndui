@@ -1,10 +1,10 @@
 <style lang="less" scoped>
-.hr-input {
+.nd-input {
 	display: inline-block;
 	position: relative;
 	border-radius: 4px;
 }
-.hr-input > .hr-input-inner {
+.nd-input > .nd-input-inner {
 	display: inline-block;
 	box-sizing: border-box;
 	appearance: none;
@@ -18,33 +18,33 @@
 	transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.hr-input > .hr-input-inner::-webkit-input-placeholder {
+.nd-input > .nd-input-inner::-webkit-input-placeholder {
 	color: #ccc;
 }
 
-.hr-input > .hr-input-inner:-ms-input-placeholder {
+.nd-input > .nd-input-inner:-ms-input-placeholder {
 	color: #ccc;
 }
 
-.hr-input > .hr-input-inner::placeholder {
+.nd-input > .nd-input-inner::placeholder {
 	color: #ccc;
 }
 
 //基本输入框样式
-.hr-input-primary > .hr-input-inner {
+.nd-input-primary > .nd-input-inner {
 	background: #fcfcfc;
 	border: 1px solid #e2e2e2;
 }
-.hr-input-primary > .hr-input-inner:focus {
+.nd-input-primary > .nd-input-inner:focus {
 	border: 1px solid #0acd79;
 }
 //登录输入框样式
-.hr-input-login > .hr-input-inner {
+.nd-input-login > .nd-input-inner {
 	background: rgba(187, 187, 187, 0.4);
 	color: #fff;
 }
 
-.hr-icon-search {
+.nd-icon-search {
 	position: absolute;
 	height: 100%;
 	width: 35px;
@@ -56,7 +56,7 @@
 	font-size: 14px;
 }
 
-.hr-icon-search:after {
+.nd-icon-search:after {
 	content: "";
 	display: inline-block;
 	width: 0;
@@ -66,8 +66,8 @@
 </style>
 
 <template>
-<div class="hr-input" :class="[input_type]">
-    <input class="hr-input-inner" :placeholder="placeholder" :type="type" :value="value" @input="updateValue" />
+<div class="nd-input" :class="[input_type]">
+    <input class="nd-input-inner" :placeholder="placeholder" :type="type" :value="value" @input="updateValue" />
     <i :class="[input_icon]"></i>
 </div>
 </template>
@@ -94,15 +94,15 @@ export default {
 		input_type() {
 			switch (this.inputType) {
 				case "primary":
-					return "hr-input-primary";
+					return "nd-input-primary";
 				case "login":
-					return "hr-input-login";
+					return "nd-input-login";
 			}
 		},
 		input_icon() {
 			switch (this.icon) {
 				case "search":
-					return "hr-icon-search";
+					return "nd-icon-search";
 			}
 		}
 	},
